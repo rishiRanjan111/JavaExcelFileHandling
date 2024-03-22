@@ -8,6 +8,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
+//Assignment 1
 public class ReadExeclDataParticularCell {
 	
 	public void ReadDataBasedUponRowNoAndColumnNo(int columnNo,int rowNo) throws BiffException, IOException {
@@ -22,22 +23,15 @@ public class ReadExeclDataParticularCell {
 			 for (int j=0; j<c; j=j+1) { //column loop
 				 if ((i==rowNo)&& (j==columnNo)) {
 					 Cell wc = ws.getCell(j, i);   // cell object
-					 System.out.println(wc.getContents());
-					 
+					 System.out.println(wc.getContents()); 
 				 }
-				
 			 }
-		 }
-		
-		
-		
+		 }	
 	}
-
 	public static void main(String[] args) throws BiffException, IOException {
 		ReadExeclDataParticularCell rd = new ReadExeclDataParticularCell();
 		rd.ReadDataBasedUponRowNoAndColumnNo(3, 1);
 		
-
 	}
 
 }

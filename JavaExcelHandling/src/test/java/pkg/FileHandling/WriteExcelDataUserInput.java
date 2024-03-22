@@ -11,6 +11,7 @@ import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import jxl.write.biff.RowsExceededException;
 
+//Assignment 4
 public class WriteExcelDataUserInput {
 	
 	public void WriteData(int rowCount, int columnCount) throws IOException, RowsExceededException, WriteException {
@@ -19,10 +20,11 @@ public class WriteExcelDataUserInput {
 		WritableSheet ws = wb.createSheet("Rishi", 0);
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the String: ");
-		String s = sc.nextLine();
+		
 		
 		for (int i=0; i<rowCount; i=i+1) {
 			for (int j=0; j<columnCount; j=j+1) {
+				String s = sc.nextLine();
 				Label L = new Label(j,i,s);
 				ws.addCell(L);
 			}

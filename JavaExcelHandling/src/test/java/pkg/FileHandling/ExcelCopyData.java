@@ -13,6 +13,8 @@ import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import jxl.write.biff.RowsExceededException;
 
+//Assignment 5
+
 public class ExcelCopyData {
 	
 	public void ReadWriteExcel() throws BiffException, IOException, RowsExceededException, WriteException {
@@ -35,9 +37,6 @@ public class ExcelCopyData {
 		 }
 		wk.write();
 		wk.close();
-		
-
-		
 		
 	}
 
